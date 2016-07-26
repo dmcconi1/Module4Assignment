@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Assignment 4</title>
+    <link rel="stylesheet" type="text/css" href="styles/Assignment4.css" />
+ <script src="Js/Assignment4.js"></script>
+
+</head>
+
+<body>
+    <h1>Customer Information Modification Form</h1>
+    <hr><br>
+   
+        <select onchange="MenuChoice(value)" id="menu">
+            <option value= "None">Please select an option</option>
+            <option value= "customerlist">Customer List</option>
+            <option value= "createcustomer">Create a Customer to Add to Customer List</option>
+            <option value= "deletecustomer">Delete an Customer from the Database</option>
+        </select>
+    <hr><br>    
+
+
+<section id="customerlist">
+    <h2>Customer Information List</h2><br>
+    <div class="add"><button onclick="MenuChoice('createcustomer')">Add Customer</button><br><br></div>
+    <div id="customerinfo"></div>
+</section>
+
+<section id="createcustomer">
+    <h2>Create Customer Section</h2><br>
+    <button onclick="MenuChoice('customerlist')">Back to Customer List</button><br><br>
+    <label>Please Enter an Customer ID: </label>
+    <input type="text" id="customerid1"><i>(input 5 uppercase letters only)</i>
+    <br>
+    <label>Please Enter the Customer Name: </label>
+    <input type="text" id="customername1">
+    <br>
+    <label>Pleaes enter the Customer's City: </label>
+    <input type="text" id="customercity1">
+    <br>
+    <button onclick="AddCustomerbyInput()">Add a new Employee</button>
+    <br>
+    <hr>
+    <br>
+    <button onclick="MenuChoice('deletecustomer')">Go to Delete a Customer from the Database</button><br><br>
+</section>
+
+<section id="deletecustomer">
+    <h2>Delete Customer Section</h2><br>
+    <label>Please Enter a Customer ID: </label>
+    <input type="text" id="customerid2">
+    <br>
+    <button onclick="DeleteCustomerbyInput()">Delete an Existing Employee</button>
+    <br>
+    <hr>
+    <br>
+    <button onclick="MenuChoice('customerlist')">Return to Customer List</button><p>    </p><button onclick="MenuChoice('createcustomer')">Return to Create a Customer to Add to Customer List</button><br><br><br><br>
+</section>
+
+
+
+<footer> <p> David L. McConico <br/> dmcconi1@uab.edu <br></p></footer>
+
+
+</body>
+</html>

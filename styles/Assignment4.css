@@ -1,0 +1,43 @@
+h1
+{
+    font: sans serif;
+    text-align: center;
+    background-color: #F5F5F5;
+}
+
+h2 {font: sans serif;
+    text-align: center;
+}
+
+
+section
+{
+    position: absolute;
+}
+
+#customerlist {background-color: #F5DEB3; visibility: hidden; position: absolute; height: 55%; width: 100%; overflow: scroll}
+
+#createcustomer {background-color: #FFA07A; visibility: hidden;height: 65%; width: 100%; overflow: scroll;}
+
+#deletecustomer {background-color: #F5F5DC; visibility: hidden; 75%; width: 100%; overflow: scroll;}
+
+
+
+table, tr, th, td
+{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 8px;
+    
+}
+
+
+footer
+{
+    text-align: center;
+    font-style: italic;
+    background-color: #D3D3D3;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}

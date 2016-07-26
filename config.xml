@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<widget xmlns   = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "edu.uab.business.studentapp"
+        versionCode = "1" 
+        version     = "0.0.1" >
+
+    <!-- versionCode is optional and Android only -->
+
+    <name>Module 3 Assignment</name>
+
+    <description>
+        Module 3 Assignment 
+    </description>
+
+    <author>
+        David L. McConico 
+    </author>
+    
+    <preference name="phonegap-version" value="cli-6.1.0" />
+    <plugin name="cordova-plugin-whitelist" spec="1.2.2" />
+    <access origin="*" />
+
+</widget>
